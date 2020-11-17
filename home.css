@@ -41,7 +41,7 @@ nav ul {
     direction: rtl;
 }
 header{
-    background: url('header-img-opct.png') no-repeat center top fixed;
+    background: url('images/header-img-opct.png') no-repeat center top fixed;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
