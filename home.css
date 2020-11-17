@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
+    font-size: smaller;
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+#logo img {
+    width: 120px;
+    height: 60px;
+    padding: 0% 15%;
+}
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #e6e6e6;
+    padding: 2%;
+}
+.left {
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: larger;
+}
+nav {
+    padding: 2% 5%;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 2%;
+}
+nav ul {
+    direction: rtl;
+}
+header{
+    background: url('header-img-opct.png') no-repeat center top fixed;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 610px;
+}
+#sobre h1, 
+#desafio h1 {
+    text-align: center;
+    margin-bottom: 4%;
+}
+#sobre {
+    text-align: justify;
+    max-width: 70%;
+    padding: 5%;
+    margin: 0 auto;
+}
+#title {
+    color: #e6e6e6;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+#title h1 {
+    margin-block-end: auto;
+    margin-block-start: auto;
+    font-weight: bold;
+}
+#social {
+    text-align: center;
+}
+#social ul li {
+    position: relative;
+    display: inline-block;
+}
+#social img {
+    width: 35px;
+    padding-right: 10px;
+}
+#desafio {
+    background-color: #ebf7ed;
+    min-height: 500px;
+    padding: 5% 1%;
+}
+.card {
+    background-color: #fff;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 .4em #888;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.card img {
+    width: 120px;
+    border-radius: 80px;
+}
+.card div.left {
+    padding: 0% 8%;
+}
+button {
+    background-color: transparent;
+    border: 2px solid darkseagreen;
+    padding: 1.5%;
+    border-radius: 5px;
+    color: darkseagreen;
+    font-size: smaller;
+    width: 28%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 1%;
+}
+#desafio .left a {
+    color: #333;
+    font-size: smaller;
+}
+ul {
+    list-style-type: none;
+}
+.left p {
+    text-align: center;
+}
+.pb {
+    padding-bottom: 2%;
+}
