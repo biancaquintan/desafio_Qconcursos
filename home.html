@@ -40,14 +40,14 @@
         <h1>Desafio</h1>
         <div class="card">
             <div class="left">
-                <img src="images/profile.jpg">
-                <p><a href="#">VISITAR PERFIL</a></p>
+                <img id="avatar">
+                <p><a id="profile" target="_blank">VISITAR PERFIL</a></p>
             </div>
             <div>
                 <ul>
-                    <li class="pb">Repositórios: 15</li>
-                    <li class="pb">Seguidores: 100</li>
-                    <li class="pb">Seguindo: 100</li>
+                  <li class="pb">Repositórios: <span id="repos"></span></li>
+                    <li class="pb">Seguidores: <span id="followers"></span></li>
+                    <li class="pb">Seguindo: <span id="following"></span></li>
                 </ul>
                 <br>
                 <button>Ver Repositórios</button>
@@ -64,6 +64,11 @@
         </div>
       </div>
     </footer>
+
+    <script src="home.js"></script>                       
   </body>
 </html>
 
+<script type="module">
+  import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+</script>
