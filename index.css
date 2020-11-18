@@ -16,20 +16,6 @@ body {
     height: 60px;
     padding: 0% 15%;
 }
-footer {
-    background-color: #333;
-    text-align: center;
-    color: #e6e6e6;
-    padding: 2%;
-}
-.left {
-    float: left;
-}
-a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: larger;
-}
 nav {
     padding: 2% 5%;
 }
@@ -48,8 +34,27 @@ header{
     justify-content: space-between;
     min-height: 610px;
 }
-#sobre h1, 
-#desafio h1 {
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #e6e6e6;
+    padding: 2%;
+}
+.left {
+    float: left;
+}
+.center {
+    text-align: center;
+}
+.pb {
+    padding-bottom: 2%;
+}
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: larger;
+}
+h1 {
     text-align: center;
     margin-bottom: 4%;
 }
@@ -68,8 +73,6 @@ header{
 }
 #title h1 {
     margin-block-end: auto;
-    margin-block-start: auto;
-    font-weight: bold;
 }
 #social {
     text-align: center;
@@ -97,7 +100,7 @@ header{
     text-transform: uppercase;
     font-weight: bolder;
 }
-.card img {
+#avatar {
     width: 120px;
     border-radius: 80px;
 }
@@ -123,9 +126,10 @@ button {
 ul {
     list-style-type: none;
 }
-.left p {
-    text-align: center;
-}
-.pb {
-    padding-bottom: 2%;
+#nick{
+    text-transform: lowercase;
+    background-color: #75a975;
+    border-radius: 5px;
+    padding: 3px;
+    color: #f5f5f5;
 }
