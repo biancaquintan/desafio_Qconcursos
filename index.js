@@ -26,11 +26,18 @@ fetch(urlRepos)
 .then(response => response.json())
 .then(data => {
 
-    let tableInfo = document.getElementById('tableRepos')
+    let tableInfo = document.getElementById('infoRepos')
     var i
 
     for (i = 0; i < data.length; i++) {
-        var newChild = `<tr><td>${data[i].name}</td></tr>`;
+        var newChild = `<tr>
+                            <td>${data[i].name}</td>
+                            <td><a href='${data[i].html_url}' 
+                                   title="Abrir repositório" 
+                                   target="_blank">
+                                   <small>GitHub<small></a>
+                            </td>
+                        </tr>`;
         tableInfo.insertAdjacentHTML('beforeend', newChild);
     }
 

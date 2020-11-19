@@ -44,20 +44,20 @@
           <img id="avatar">
           <p class="center"><a id="profile" target="_blank" title="Ir para GitHub">VISITAR PERFIL</a></p>
         </div>
-        <div>
+        <div id="gitInfo">
           <span id="nick"></span>
           <ul>
-            <li class="pb">Repositórios: <span id="repos"></span></li>
-            <li class="pb">Seguidores: <span id="followers"></span></li>
-            <li class="pb">Seguindo: <span id="following"></span></li>
+            <li class="pb">REPOSITÓRIOS: <span id="repos"></span></li>
+            <li class="pb">SEGUIDORES: <span id="followers"></span></li>
+            <li class="pb">SEGUINDO: <span id="following"></span></li>
           </ul>
-          <br>
-          <button onclick="showList()">Ver Repositórios</button>
-          <button>Ver Favoritos</button>
+          <button onclick="showList()">VER REPOSITÓRIOS</button>
+          <button>VER FAVORITOS</button>
         </div>
         <div id="repos-list">
-          <h7>Lista dos Repositórios</h7>
-          <table id="tableRepos">
+          <h7>LISTA DOS REPOSITÓRIOS</h7>
+          <table>
+            <tbody id="infoRepos"></tbody>
           </table>
         </div>
       </div>

@@ -94,10 +94,9 @@ h1 {
     background-color: #fff;
     max-width: 50%;
     margin: 0 auto;
-    padding: 5%;
+    padding: 5% 5% 2% 5%;
     border-radius: 5px;
     box-shadow: 0 0 .4em #888;
-    text-transform: uppercase;
     font-weight: bolder;
 }
 #avatar {
@@ -105,7 +104,7 @@ h1 {
     border-radius: 80px;
 }
 .card div.left {
-    padding: 0% 8%;
+    padding: 0% 5%;
 }
 button {
     background-color: transparent;
@@ -115,7 +114,6 @@ button {
     color: darkseagreen;
     font-size: smaller;
     width: 28%;
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 1%;
 }
@@ -127,7 +125,6 @@ ul {
     list-style-type: none;
 }
 #nick{
-    text-transform: lowercase;
     background-color: #75a975;
     border-radius: 5px;
     padding: 3px;
@@ -135,10 +132,21 @@ ul {
 }
 #repos-list {
     display: none;
+    margin: 0% 7%;
 }
-table {
-    text-transform: lowercase;
+#repos-list table {
+    margin: 3% 10% 0% 7%;
+    width: 90%;
 }
-#tableRepos tr:nth-child(odd) {
-    background-color: #ebf7ed;
-  }
+#infoRepos tr:nth-child(odd) {
+    background: #ebf7ed;
+}
+#infoRepos td {
+    padding: 1%;
+}
+#gitInfo {
+    padding-bottom: 7%;
+}
+td small {
+ color: #102c0c;
+}
