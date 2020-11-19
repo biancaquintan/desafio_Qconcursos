@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Desafio QConcursos</title>
+    <link rel="icon" href="images/favicon.webp"/>
     <link rel="stylesheet" href="index.css">
   </head>
 
@@ -39,21 +40,26 @@
     <div id="desafio">
       <h1>Desafio</h1>
       <div class="card">
-          <div class="left">
-            <img id="avatar">
-            <p class="center"><a id="profile" target="_blank" title="Ir para GitHub">VISITAR PERFIL</a></p>
-          </div>
-          <div>
-            <span id="nick"></span>
-            <ul>
-              <li class="pb">Repositórios: <span id="repos"></span></li>
-              <li class="pb">Seguidores: <span id="followers"></span></li>
-              <li class="pb">Seguindo: <span id="following"></span></li>
-            </ul>
-            <br>
-            <button>Ver Repositórios</button>
-            <button>Ver Favoritos</button>
-          </div>
+        <div class="left">
+          <img id="avatar">
+          <p class="center"><a id="profile" target="_blank" title="Ir para GitHub">VISITAR PERFIL</a></p>
+        </div>
+        <div>
+          <span id="nick"></span>
+          <ul>
+            <li class="pb">Repositórios: <span id="repos"></span></li>
+            <li class="pb">Seguidores: <span id="followers"></span></li>
+            <li class="pb">Seguindo: <span id="following"></span></li>
+          </ul>
+          <br>
+          <button onclick="showList()">Ver Repositórios</button>
+          <button>Ver Favoritos</button>
+        </div>
+        <div id="repos-list">
+          <h7>Lista dos Repositórios</h7>
+          <table id="tableRepos">
+          </table>
+        </div>
       </div>
     </div>
 
