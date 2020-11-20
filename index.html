@@ -5,6 +5,7 @@
     <title>Desafio QConcursos</title>
     <link rel="icon" href="images/favicon.webp"/>
     <link rel="stylesheet" href="index.css">
+
   </head>
 
   <body>
@@ -23,9 +24,9 @@
       </div>
       <div id="social">
         <ul>
-          <li><a href="#" title="Ir para Facebook"><img src="images/f.png"></a></li>
-          <li><a href="#" title="Ir para Linkedin"><img src="images/l.png"></a></li>
-          <li><a href="#" title="Ir para Github"><img src="images/g.png"></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/bianca.sota" title="Ir para Facebook"><img src="images/f.png"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/bianca-s%C3%B3ta-quint%C3%A3n-5b926b185/" title="Ir para Linkedin"><img src="images/l.png"></a></li>
+          <li><a target="_blank" href="https://github.com/biancaquintan" title="Ir para Github"><img src="images/g.png"></a></li>
         </ul>
       </div>
     </header>
@@ -51,18 +52,27 @@
             <li class="pb">SEGUIDORES: <span id="followers"></span></li>
             <li class="pb">SEGUINDO: <span id="following"></span></li>
           </ul>
-          <button onclick="showList()">VER REPOSITÓRIOS</button>
-          <button>VER FAVORITOS</button>
+          <br>
+          <button onclick="showRepos()">VER REPOSITÓRIOS</button>
+          <button onclick="showStars()">VER FAVORITOS</button>
         </div>
         <div id="repos-list">
-          <h7>LISTA DOS REPOSITÓRIOS</h7>
+          <h7>LISTA DE REPOSITÓRIOS</h7>
           <table>
             <tbody id="infoRepos"></tbody>
+          </table>
+        </div>
+        <div id="starred-list">
+          <h7>LISTA DE FAVORITOS</h7>
+          <table>
+            <tbody id="infoStarred"></tbody>
           </table>
         </div>
       </div>
     </div>
 
+
+    
     <footer>
       <div>
         <span>Desafio Desenvolvedor Front Qconcursos.com</span>

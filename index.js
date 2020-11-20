@@ -1,5 +1,6 @@
 const urlProfile = "https://api.github.com/users/biancaquintan"
 const urlRepos = "https://api.github.com/users/biancaquintan/repos"
+const urlStars = "https://api.github.com/users/biancaquintan/starred"
 
 fetch(urlProfile)
 .then(response => response.json())
@@ -43,6 +44,46 @@ fetch(urlRepos)
 
 }).catch(error => console.log(error))
 
-function showList() {
+fetch(urlStars)
+.then(response => response.json())
+.then(data => {
+
+    let tableInfo = document.getElementById('infoStarred')
+    var i
+
+    for (i = 0; i < data.length; i++) {
+        var newChild = `<tr>
+                            <td>${data[i].name}</td>
+                            <td><a href='${data[i].html_url}' 
+                                   title="Abrir repositório" 
+                                   target="_blank">
+                                   <small>GitHub<small></a>
+                            </td>
+                        </tr>`;
+        tableInfo.insertAdjacentHTML('beforeend', newChild);
+    }
+
+}).catch(error => console.log(error))
+
+function showRepos() {
+    document.getElementById("starred-list").style.display = "none";
     document.getElementById("repos-list").style.display = "unset";
 }
+
+function showStars() {
+    document.getElementById("repos-list").style.display = "none";
+    document.getElementById("starred-list").style.display = "unset";
+}
+
+var mybutton = document.getElementById("top");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
