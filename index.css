@@ -30,7 +30,7 @@ header{
     background: url('images/header-img-opct.png') no-repeat center top fixed;
     background-size: 100% 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
     min-height: 610px;
 }
@@ -174,3 +174,43 @@ td i:hover {
   border-radius: 5px;
 }
 
+/* responsive layout */
+@media screen and (max-device-width: 767px) {
+    nav {
+        display: none;
+    }
+    #title {
+        font-size: medium;
+    }
+    #sobre {
+        max-width: 85%;
+    }
+    header {
+        min-height: 790px;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+}
+@media screen and (max-device-width: 991px) {
+    .card {
+        max-width: 80%;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .card .left {
+        float: inherit;
+    }
+    #gitInfo ul {
+        padding: inherit;
+    }
+    .card button {
+        font-size: inherit;
+        width: 65%;
+        margin-bottom: 3%;
+    }
+}
+@media screen and (max-device-width: 1200px) and (min-device-width: 992px) {
+    .card button {
+        font-size: x-small;
+    }        
+}
