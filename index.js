@@ -34,9 +34,10 @@ fetch(urlRepos)
         var newChild = `<tr>
                             <td>${data[i].name}</td>
                             <td><a href='${data[i].html_url}' 
-                                   title="Abrir repositório" 
+                                   title="Abrir repositório no GitHub" 
                                    target="_blank">
-                                   <small>GitHub<small></a>
+                                   <i class="fa fa-arrow-right"></i>
+                                </a>
                             </td>
                         </tr>`;
         tableInfo.insertAdjacentHTML('beforeend', newChild);
@@ -55,9 +56,10 @@ fetch(urlStars)
         var newChild = `<tr>
                             <td>${data[i].name}</td>
                             <td><a href='${data[i].html_url}' 
-                                   title="Abrir repositório" 
-                                   target="_blank">
-                                   <small>GitHub<small></a>
+                                    title="Abrir repositório no GitHub" 
+                                    target="_blank">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
                             </td>
                         </tr>`;
         tableInfo.insertAdjacentHTML('beforeend', newChild);
