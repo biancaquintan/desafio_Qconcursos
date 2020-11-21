@@ -227,6 +227,9 @@ label[for="btn-menu"] {
         justify-content: center;
         padding: 10px;
     }
+    #top {
+        right: 75px;
+    }
 }
 @media screen and (max-device-width: 991px) {
     .card {
